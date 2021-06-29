@@ -19,21 +19,26 @@ body {
   font-size: 1.25em;
 }
 
-.links {
+/* wide links */
+
+.links-left,
+.links-right {
   display: flex;
   align-items: center;
   flex: auto;
   margin-left: 10px;
-  
 }
 
-/* wide links */
+.links-right {
+  justify-content: flex-end;
+}
 
 .link {
   display: flex;
   align-items: center;
   height: 100%;
   background-color: #773769d5;
+  padding: 0 15px;
 }
 
 .link:hover {
@@ -46,8 +51,10 @@ body {
   justify-content: flex-end;
 }
 
-.link p {
+.link a {
   margin: 0px 10px;
+  text-decoration: none;
+  color: #dcc087;
 }
 
 /* drop down */
@@ -92,7 +99,8 @@ body {
   body{
     background-color: lightcoral;
   }
-  .links {
+  .links-left,
+  .links-right {
     display: none;
   }
 }
