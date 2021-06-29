@@ -2,59 +2,80 @@
 <html lang='en'>
 
 <head>
-    <meta charset='UTF-8'>
-    <title></title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            margin: 0;
-            height: calc(100vh - 20px);
-            width: calc(100vw - 20px);
-            border: 10px solid red;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+  <meta charset='UTF-8'>
+  <font>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  </font>
 
-        .container .img_blocks {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap
-        }
 
-        .img_blocks img {
-            margin: 5px;
-            height: 120px;
-            width: auto;
-        }
-    </style>
+  <title>Navigation Bar</title>
+  <style>
+    body {
+      margin: 0px;
+      font-family: 'Audiowide', cursive;
+      color: #dcc087;
+    }
+    .navigation-bar {
+      display: flex;
+      background-color: #53284a;
+      height: 60px;
+    }
+
+    .web-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: initial;
+      margin-left: 10px;
+      color: #fb9d0a;
+      font-size: 1.25em;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      flex: auto;
+      margin-left: 10px;
+      
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      background-color: #773769d5;
+    }
+
+    .link:hover {
+      color: #955006;
+      background-color: #d1aac1;
+    }
+
+    .link3 {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .link p {
+      margin: 0px 10px;
+    }
+
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="img_blocks">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-            <img src="https://source.unsplash.com/random/150x150" alt="">
-        </div>
+  <div class="navigation-bar">
+    <div class="web-name">
+      <p>A Unique Name Here</p>
     </div>
+    <div class="links">
+      <div class="link link1"><p>LINK 1</p></div>
+      <div class="link link2"><p>LINK 2</p></div>
+      <div class="link link3"><p>LINK 3</p></div>
+    </div>
+  </div>
 </body>
 
 </html>
